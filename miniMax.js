@@ -14,16 +14,13 @@ function miniMaxSum(arr) {
 
     let sum = 0;
 
-    console.log("i", i);
     for (; j !== i; ) {
-      console.log("j", j);
       sum += arr[j];
       ++j;
       if (j === arr.length) {
         j = 0;
       }
     }
-    console.log("sum", sum, "min", min, "max", max);
     if (min == 0) {
       min = sum;
     } else if (sum < min) {
